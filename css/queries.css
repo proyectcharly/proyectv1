@@ -1,5 +1,20 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
+
+	.panel{
+
+		margin-left: 69px;
+        width: 290px;
+	}
+
+	.inner {
+        padding-top: 0px;
+    }
+
+    .col-md-6.brand.text-center.inner {
+         margin-left: -26px;
+/* margin-top: 0px; */
+    }
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
@@ -28,4 +43,5 @@
 	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
 	.legals { text-align: center; margin: 0; padding: 0; }
 	.credit { text-align: center; }
+
 }

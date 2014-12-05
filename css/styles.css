@@ -107,8 +107,37 @@ figure { margin: 0; }
 Forms
 ========================================================================== */
 /* * Corrects margin displayed oddly in IE 6/7. */
- 
-form { margin: 0; }
+.brand{
+	margin-left: 10px;
+}
+
+.form{
+	float: left;
+	margin-left: -100px;
+	
+}
+
+.form-control {
+background-color: rgba(255, 255, 255, 0.63);
+}
+
+
+.panel-default>.panel-heading {
+color: #333;
+background-color: rgba(245, 245, 245, 0.71);
+border-color: rgba(221, 221, 221, 0.09);
+height: 32px;
+}
+
+.panel {
+margin-bottom: 20px;
+width: 500px;
+background-color: rgba(255, 255, 255, 0.56);
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
 /* * Define consistent border, margin, and padding. */
 fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
 /* * 1. Corrects color not being inherited in IE 6/7/8/9.
