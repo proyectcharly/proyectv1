@@ -1,6 +1,9 @@
 <?php
+
+require_once("phpmailer/class.phpmailer.php");
+$mail = new PHPMailer();
 /* Set e-mail recipient */
-$myemail = "cahrly.yribarren@gmail.com";
+$myemail = "charly.yribarren@gmail.com";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['inputName'], "Your Name");
