@@ -11,7 +11,29 @@ $email = check_input($_POST['inputEmail'], "Your E-mail Address");
 $subject = check_input($_POST['inputSubject'], "Message Subject");
 $message = check_input($_POST['inputMessage'], "Your Message");
 
+/* configuracion de servidor*/
+$mail->IsSMTP();
+$mail->SMTPAuth = true;
+$mail->Host = "cpanel.possibleapp.com";
+$mail->Port = 465;
+$mail->Username = "contacto@proyect.agency";
+$mail->Password = "@proyect2014.%";
+
+/* configuracion de servidor*/
+$mail->SetFrom('contacto@proyect.agency', 'Web App');
+$mail->Subject = "A Transactional Email From Web App";
+$mail->MsgHTML($body);
+$mail->AddAddress($address, $name);
+
+/* configuracion de servidor*/
+if($mail->Send()) {
+  echo "Message sent!";
+} else {
+  echo "Mailer Error: " . $mail->ErrorInfo;
+}
+
 /* If e-mail is not valid show error message */
+
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {
 show_error("Invalid e-mail address");
